@@ -18,14 +18,14 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import "./index.scss"
 import { AuthContextProvider } from './context/AuthContextProvider.jsx'
-import { HashRouter } from 'react-router-dom'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
+    
       <AuthContextProvider>
         <App />
       </AuthContextProvider>
-    </HashRouter>
+ 
   </StrictMode>,
 )
